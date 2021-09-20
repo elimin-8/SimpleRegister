@@ -1,1 +1,2 @@
 # SimpleRegister
+test
