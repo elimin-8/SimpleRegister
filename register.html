@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#register">Register</a>
+        <a href="login.html">Login</a>
+     </div>
+
+    <form action="register.php">
+        <div class="container">
+        <h1>Register</h1>
+        <p>Fill out this form to create an account</p>
+        <hr>
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="user" required>
+
+        <label for="real_name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="real_name" id="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email"required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+        <label for="password-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="password_repeat" id="password_repeat" required>
+        </div>
+
+        <button type="submit" class="registerbtn">Register</button>
+
+    </form>
+</body>
+</html>
