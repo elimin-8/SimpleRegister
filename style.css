@@ -26,11 +26,20 @@
     color: white;
 }
 
+body {
+    background-image: url("school.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 * {box-sizing: border-box;}
 
 /* Container padding */
 .container {
     padding: 16px;
+    background-color: rgba(128, 128, 128, 0.9);
+    
 }
 
 /* Full-wdith input fields */
@@ -73,4 +82,17 @@ hr {
 /* Blue colour to links */
 a {
     color: cornflowerblue;
+}
+
+/* H1 formatting */
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+
+p {
+    text-align: center;
+    font-family: sans-serif;
 }
