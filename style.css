@@ -92,7 +92,22 @@ h1 {
     font-size: 100px;
 }
 
+h2 {
+    color: #f1f1f1;
+}
+
+#p1 {
+    color: #f1f1f1;
+    text-align:left;
+    font-size: 17px;
+}
+
 p {
     text-align: center;
     font-family: sans-serif;
+    font-size: 25px;
+}
+
+b {
+    color: #f1f1f1;
 }
