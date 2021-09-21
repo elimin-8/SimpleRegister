@@ -1,0 +1,76 @@
+/* Blue background for nav */
+.topnav {
+    background-color:blue;
+    overflow: hidden;
+}
+
+/* Style for links inside nav */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Colour of links on hover */
+.topnav a:hover {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+/* Colour for active link */
+.topnav a.active {
+    background-color: darkblue;
+    color: white;
+}
+
+* {box-sizing: border-box;}
+
+/* Container padding */
+.container {
+    padding: 16px;
+}
+
+/* Full-wdith input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite hr default styles */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Style for register button */
+.regsisterbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.regsisterbtn:hover {
+    opacity: 1;
+}
+
+/* Blue colour to links */
+a {
+    color: cornflowerblue;
+}
