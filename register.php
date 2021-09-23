@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $password_repeat = $_POST['password_repeat'];
-
+    $email_exp = "/.+@.+\..+/";
 
     print "$username\n\r";
     print "$real_name\n\r";
@@ -27,6 +27,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
      }
 
+     // Email Validation
+     if (!preg_match($email_exp, $email)) {
+        echo("Email must be in standard format!");
+        exit;
+     }
 
     //hash the password
     $hashed = hash("sha512", $password);
