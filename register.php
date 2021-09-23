@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $real_name = $_POST['real_name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $password_repeat = $_POST['password_repeat']
+    $password_repeat = $_POST['password_repeat'];
 
 
     print "$username\n\r";
