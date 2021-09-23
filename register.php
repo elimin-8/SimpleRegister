@@ -21,6 +21,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
          exit;
      }
 
+     // Password Validation
+     if (strlen($_POST["password"]) <="8"){
+        echo("Your password must contain at least 8 characters");
+        exit;
+     }
+
 
     //hash the password
     $hashed = hash("sha512", $password);
