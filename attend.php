@@ -1,4 +1,5 @@
 <?php
+    include("db-connection.php");
     session_start();  
 
     if($_SESSION['login_user']==true){ 
@@ -8,7 +9,6 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"]=="POST") {
-        include("db-connection.php");
         $username = $_SESSION["login_user"];
         $sql = "INSERT INTO attendance (username, time) VALUES ($username, date('Y-m-d H:i:s'))";
         if(mysqli_query($conn, $sql)){
