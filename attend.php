@@ -10,7 +10,7 @@
 
     if ($_SERVER["REQUEST_METHOD"]=="POST") {
         $username = $_SESSION["login_user"];
-        $sql = "INSERT INTO attendance (username, time) VALUES ($username, date('Y-m-d H:i:s'))";
+        $sql = "INSERT INTO attendance (username, time) VALUES ('$username', 'date('Y-m-d H:i:s')')";
         if(mysqli_query($conn, $sql)){
             echo "Records inserted successfully.";
         } else{
