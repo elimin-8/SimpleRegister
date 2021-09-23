@@ -16,6 +16,7 @@
         if($_SESSION['login_user']==true){ 
             echo "<a style='float:right;'>" . $_SESSION["login_user"] . "</a>";
             echo '<a href="logout.php">Logout</a>';
+            echo '<a href="attend.php">Attend>/a>';
         }
         if($_SESSION['login_user']==false){
             echo '<a href="register.html"><span>Register</span></a>';
