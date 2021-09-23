@@ -6,12 +6,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $real_name = $_POST['real_name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $password_repeat = $_POST['password_repeat']
 
 
     print "$username\n\r";
     print "$real_name\n\r";
     print "$email\n\r";
     print "$password\n\r";
+
+     // Password match check
+     if ($_POST['password'] != $_POST['password_repeat'])
+     {
+         echo("Passwords do not match! Try again.");
+         exit;
+     }
+
 
     //hash the password
     $hashed = hash("sha512", $password);
@@ -23,6 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
     }
     
+   
     // Close connection
     mysqli_close($conn);
 }
