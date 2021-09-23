@@ -30,7 +30,7 @@
 
     if($_SESSION['login_user']==true){ 
         echo "<form action='attend.php' method='POST'>";
-        echo "<button type ='submit'>Mark Attendance</button>";
+        echo "<button type ='submit' id='attend_button'>Mark Attendance</button>";
         echo "</form>";
     }
 
