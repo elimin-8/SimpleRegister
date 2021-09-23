@@ -2,7 +2,9 @@
     session_start();  
 
     if($_SESSION['login_user']==true){ 
-        echo "<button type ='button'>Mark Attendance</button>";
+        echo "<form action='attend.php' method='POST'>";
+        echo "<button type ='submit'>Mark Attendance</button>";
+        echo "</form>";
     }
 
     if ($_SERVER["REQUEST_METHOD"]=="POST") {
